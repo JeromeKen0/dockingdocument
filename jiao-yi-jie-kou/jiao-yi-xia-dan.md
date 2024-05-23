@@ -34,7 +34,7 @@ description: 调用该接口，生成支付链接，跳转到银行网银页面�
 | order\_desc    | String      | 是        | 商品名称/订单标题                                    |
 | remark         | String      | 是        | 用户实名                                         |
 | extend         | String      | 否        | 扩展参数                                         |
-| time\_out      | <p><br></p> | 否        | <p>订单有效期，单位：分钟</p><p>默认值：60</p>              |
+| time\_out      | String      | 否        | <p>订单有效期，单位：分钟</p><p>默认值：20</p>              |
 | notify\_url    | String      | 是        | 支付成功结果异步通知地址，为空则不通知                          |
 | return\_url    | String      | 否        | 重定向链接，支付成功后重定向到此链接                           |
 
