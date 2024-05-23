@@ -43,12 +43,12 @@ description: 调用该接口，生成支付链接，跳转到银行网银页面�
 ```
 {
     "charset": "UTF-8",
-    "biz_req_body": "{\"amount\":\"168.00\",\"out_trade_no\":\"\",\"user_id\":\"13429\",\"order_desc\":\"\",\"notify_url\":\"\"}",
-    "sign": "",
-    "service_no": "netpay",
-    "app_id": "app_id",
+    "biz_req_body": "{\"amount\":\"50\",\"notify_url\":\"回调地址\",\"order_desc\":\"订单备注\",\"out_trade_no\":\"OrderNo\",\"remark\":\"用户实名\",\"return_url\":\"回调地址\",\"time_out\":20,\"user_id\":\"1760615303131168768\"}",
     "version": "v1.0.0",
-    "sign_type": "RSA2"
+    "service_no": "netpay",
+    "app_id": "appId",
+    "sign_type": "RSA2",
+    "sign": "QRUzaczJvwJpEsQ6h29EbsoIPV2Zoli13NACwlRlVsehSrS yUC7NqF4tFM0lBFLcGhBtst4Iw13q3RHbIvnWsIfd7qNCGxWk1y4cDVDvQu15YrvdDyYMeFZTXrUCPPh/EqkdzShakrJywvzJlZyWQZYPMFLdo v9GUwIlBVT3pGUoQeSU2o8pcTclEWp9AEwnCWQ5OllvMKKdCuPi0aKK6rxjmNcHPukqDImFhfVUnoSrRL tmKXg5PIWaykM2iKIAa8RQry2c7HO5Uel5g7Ub3vk0UaizMGq5sb NrHLhvlvAtEpTDwJPZd5iJTheEPmtkJ7vhJM9dX B0L6Q8BQ=="
 }
 ```
 
@@ -77,15 +77,15 @@ description: 调用该接口，生成支付链接，跳转到银行网银页面�
 
 ```
 {
-    "time_stamp": 1698392800443,
-    "data": {
-        "trade_no": "C2023102715460001",
-        "out_trade_no": "10808998921809",
-        "total_amount": 0.2,
-        "pay_url": "https://sandcash.mixienet.com.cn/pay/h5/fastpayment?version=10&mer_no=6888802123486&mer_order_no=C2023102715460001&create_time=20231027154640&expire_time=20231027164640&order_amt=0.2&notify_url=http%3A%2F%2Fpay.zrlive369.com%2Fcash%2Fcallback%2FsandToCallback&return_url=http%3A%2F%2Fwww.baidu.com&create_ip=127_0_0_1&goods_name=%E5%95%86%E5%93%81%E5%90%8D%E7%A7%B0&store_id=000000&product_code=05030001&clear_cycle=3&pay_extra=%7B%22userId%22%3A%222022%22%7D&meta_option=%5B%7B%22s%22%3A%22Android%22,%22n%22%3A%22wxDemo%22,%22id%22%3A%22com.pay.paytypetest%22,%22sc%22%3A%22com.pay.paytypetest%22%7D%5D&accsplit_flag=NO&jump_scheme=&sign_type=RSA&sign=XgR%2BI3vpo%2BDwRHPeUxoTFmiKSf49RW%2B%2BuDXfH6VWYBTFyEG1qw1W8nI0IHZqxvmO9MaTaPw2Ac3gOoe6%2B9d7%2FF2tqbMSAhXLw2BoDHmhqVn1LIkvQjl0v9a6uDLu%2FEO%2BpEJbgM6pR9hw1TeyphrUaPD0bufcqytsvVZ%2FTnYp9h7fkvTGZQLhlUGzpxhxpPX3TYc9fG51aYBR0SR5NRu%2Ft8MaiecVkUKIiWXZvbpt5LvxLdDimQRZPKMPny%2FmVVlf1cHZYzNrhyyKcj40ZwG7hVoFDGnB2jzew19gO7AGmID2x8INk%2FdPr35du%2BS7j8TRPBmpwus1%2FVvSlNPpOgfxHg%3D%3D"
-    },
     "code": 200,
-    "msg": "成功",
+    "msg": "下单成功",
+    "data": {
+        "trade_no": "20240523134146439912",
+        "out_trade_no": "aac74e19-4f6c-41e7-987a-8eee1505686b",
+        "total_amount": "500",
+        "pay_url": "https://pay.zrlive369.com/rhp/cashier-unionpayScan?OrderNo=202405231341464399"
+    },
+    "time_stamp": 1716442906951,
     "sign": "C1NJ0Rf2nMGGQ5blZ8l+VBiEXeW1HhlxCrI7h34Ee7AkyX5MISKHHbfpZCOD2whP6TfsPufY5qzjXljZ79i2yNVi/bi/3Lnt1TDjuBM1hk6rg7/93Fj1FniENe5R3Q8rwvxGMMlh/EAlTJA2vuqxTn8bwDa8+K4oFFEJ8QQaPOrTxAjkaYHODWIBQb5r9TuJKx0N3+qJ2/rzj4HzEf/4Lh2krvEPAb/iRMi71tG1WprTqHTDGqO1Sf+vzC2UsyHGPc3GXUaAxu7ln00EVUL9RqbsfjgXzW8R4faT8QDiQn+X3yqk1cVB7nzhUjnefDNCgD+deNqb9aBs0OoIlcOPQg=="
 }
 ```
