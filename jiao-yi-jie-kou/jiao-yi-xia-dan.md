@@ -21,7 +21,7 @@ description: 调用该接口，生成支付链接，跳转到银行网银页面�
 | charset        | String | 是        | UTF-8                                           |
 | sign\_type     | String | 是        | 签名类型：RSA，支持RSA、SM2                              |
 | sign           | String | 是        | 签名字符串，再用Base64编码                                |
-| service\_no    | String | 是        |  银联扫码：netpay 银联快捷：quickbindpay 支付宝扫码：alipayscan |
+| service\_no    | String | 是        |  银联扫码：netpay 银联快捷：quickbindpay 支付宝扫码：alipayscan 小额银联扫码:UnionPayScan_s|
 | biz\_req\_body | String | 是        | 业务请求参数的集合，JSON格式                                |
 
 **业务请求参数（biz\_req\_body）**
