@@ -30,7 +30,7 @@
 | out\_trade\_no | String      | 是        | 商户系统生成的订单号，**须保证在商户端不重复**，                   |
 | amount         | String      | 是        | <p>交易金额，单位：元</p><p>取值范围：0.01-99999999.99</p> |
 | order\_desc    | String      | 是        | 商品名称/订单标题                                    |
-| remark         | String      | 是        | 用户实名                                         |
+| remark         | String      | 是        | 用户绑定银行卡之实名，禁止用户自行输入充值姓名        |
 | extend         | String      | 否        | 扩展参数                                         |
 | time\_out      | String      | 否        | <p>订单有效期，单位：分钟</p><p>默认值：20</p>              |
 | notify\_url    | String      | 是        | 支付成功结果异步通知地址，为空则不通知                          |
